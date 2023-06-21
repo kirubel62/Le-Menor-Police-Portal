@@ -45,20 +45,46 @@ const PDisplay = (props) => {
     setModalIsOpen(newModalIsOpen);
   }
   //
-  const [DPName, setDPName] = useState("");
-  const [DPMessage, setDPMessage] = useState("");
+  const [OfficerName, setOfficerName] = useState("");
+  const [Report, setReport] = useState("");
   const [SuspectFName, setSuspectFName] = useState("");
   const [SuspectLName, setSuspectLName] = useState("");
   const [SuspectPhoto, setSuspectPhoto] = useState("");
-  const [ORGID, setORGID] = useState("");
-  const [ORGdocRef, setORGdocRef] = useState("");
+  const [SuspectDocID, setSuspectDocID] = useState("");
   const handleform = async (e) => {
     e.preventDefault(e); // when the form is submited it is not gating reloded
     //
     setSuspectFName(document.querySelector(".SuspectFName").value);
     setSuspectLName(document.querySelector(".SuspectLName").value);
     setSuspectPhoto(document.querySelector(".SuspectPhoto").value);
+    setSuspectDocID(document.querySelector(".SuspectDocid").value);
+    //
+    try {
+      e.preventDefault(); // when the form is submited it is not gating reloded
+      console.log("debug passed");
+      //
+      //
+      const docRef = await addDoc(collection(db, "InvestigationReport"), {
+        //data model from the programmer side
+        firstName: SuspectFName,
+        lastName: SuspectLName,
+        image: SuspectPhoto,
+        docid: SuspectDocID,
+        offficer: OfficerName,
+        recordResult: Report,
+      });
+      console.log("Document written with ID: ", docRef.id);
+      //setdocid(docRef.id);
+      //console.log(Docid);
+      //console.log("debug docid", docid);
 
+      //
+      alert("Registred Succsfully");
+      // setdocid("");
+    } catch (e) {
+      console.error("Error adding document: ", e);
+      alert("Error adding document");
+    }
     //
   };
 
@@ -108,37 +134,18 @@ const PDisplay = (props) => {
               <div className="modalContent">
                 <h2 className="modalTitle">Record Report Form</h2>
                 <div>
-                  <label className="modalLabel">Contact Person:</label>
-                  <h3>{obj.CPersonName}</h3>
+                  <label className="modalLabel">Born:</label>
+                  <h3>{obj.Born}</h3>
                 </div>
                 <div>
-                  <label className="modalLabel">City</label>
-                  <h3>{obj.City}</h3>
+                  <label className="modalLabel">No of family members</label>
+                  <h3>{obj.familyNo}</h3>
                 </div>
                 <div>
-                  <label className="modalLabel">Sub-City:</label>
-                  <h3>{obj.SubCity}</h3>
+                  <label className="modalLabel">resonofdisplacement</label>
+                  <h3>{obj.resonofdisplacement}</h3>
                 </div>
-                <div>
-                  <label className="modalLabel">Country:</label>
-                  <h3>{obj.Country}</h3>
-                </div>
-                <div>
-                  <label className="modalLabel">
-                    {" "}
-                    a brief description of the service{" "}
-                  </label>
-                  <p>{obj.ServiceDescription}</p>
-                </div>
-                <h1>Availability:</h1>
-                <div>
-                  <label className="modalLabel">Days of the Week::</label>
-                  <h3>{obj.ADays}</h3>
-                </div>
-                <div>
-                  <label className="modalLabel">Time of Day</label>
-                  <h3>{obj.ATime}</h3>
-                </div>
+
                 {/* peer to peer message */}
                 <div>
                   <form onSubmit={handleform} className="form">
@@ -146,14 +153,14 @@ const PDisplay = (props) => {
                       type="text"
                       placeholder="Reecord Investigation Result"
                       className="DPIB"
-                      onChange={(e) => setDPMessage(e.target.value)}
+                      onChange={(e) => setReport(e.target.value)}
                       required
                     ></input>
                     <input
                       type="text"
                       placeholder="Officer Name"
                       className="DPIB"
-                      onChange={(e) => setDPName(e.target.value)}
+                      onChange={(e) => setOfficerName(e.target.value)}
                       required
                     ></input>
                     {/*  */}
@@ -182,6 +189,15 @@ const PDisplay = (props) => {
                       }}
                       className="SuspectPhoto"
                       value={obj.image}
+                    ></input>
+
+                    <input
+                      type="text"
+                      style={{
+                        visibility: "hidden",
+                      }}
+                      className="SuspectDocid"
+                      value={obj.documentid}
                     ></input>
 
                     <button type="submit">SEND Report</button>
