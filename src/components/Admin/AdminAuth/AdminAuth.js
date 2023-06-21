@@ -31,11 +31,11 @@ const AdminAuth = () => {
         console.log(id);
         // console.log("auth=",uid);
         // console.log("auth=", user.id);
-        if (AID == "Dizm62fRVLSE90Wks3yuM1gEUK33") {
+        // if (AID == "Dizm62fRVLSE90Wks3yuM1gEUK33") {
           navigate("/admin");
-        } else {
+        // } else {
           alert("error");
-        }
+        // }
       })
       .catch((error) => {
         const errorCode = error.code;
