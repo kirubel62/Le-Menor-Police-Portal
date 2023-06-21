@@ -1,0 +1,32 @@
+.ManageAccount {
+  height: 69vh;
+}
+
+.ManageAccount {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.ManageAccount a {
+  text-decoration: none;
+}
+
+.MAcard {
+  width: 300px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+}
+
+.MAcard:hover {
+  background-color: #eaeaea;
+}
+
+.MAcard h1 {
+  font-size: 24px;
+  color: #333;
+}

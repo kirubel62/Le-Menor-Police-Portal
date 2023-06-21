@@ -1,0 +1,36 @@
+.MBlogMaster {
+  height: 63vh;
+}
+
+.MBlogMaster {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 20px;
+  row-gap: 20px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  overflow-y: auto;
+}
+
+.MBlogMaster a {
+  text-decoration: none;
+}
+
+.MBlogMaster div {
+  width: 300px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.MBlogMaster h1 {
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+}
+
+.MBlogMaster div:hover {
+  background-color: #eaeaea;
+}

@@ -1,0 +1,27 @@
+.Adminmaster {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  height: 63vh;
+  overflow-y: auto;
+}
+
+.Admincard {
+  width: 300px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  text-align: center;
+}
+
+.card h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.card:hover {
+  background-color: #f5f5f5;
+}

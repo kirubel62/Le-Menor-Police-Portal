@@ -1,0 +1,101 @@
+.DonationMaster {
+  background-color: rgb(235, 199, 19);
+  height: 100%;
+  margin-bottom: 0;
+  width: 100%;
+}
+
+.div2 {
+  position: relative;
+  border: 3px solid #73ad21;
+  margin-top: 30vh;
+}
+.head {
+  position: absolute;
+  top: 85px;
+  background-image: url("./images/pic1.png");
+  width: 100%;
+  height: 25vh;
+  opacity: 0.75;
+  align-items: center;
+  justify-content: center;
+}
+
+.h1 {
+  color: rgb(242, 190, 20);
+  text-align: center;
+  text-decoration: wavy;
+  margin-top: 275px;
+  font-weight: bold;
+  font-size: 64;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+.grid-item-card {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  display: inline;
+  align-items: center;
+  border-radius: 25px;
+  opacity: 0.75;
+  width: 45vh;
+}
+
+.grid-item-card:hover {
+  border-style: solid;
+  border-width: 15px;
+  border-color: red;
+}
+
+.telebirrLogo {
+  width: 202px;
+  height: 202px;
+  background-color: #73ad21;
+}
+.qrlogo {
+  background-image: url("./images/telebirrPSQR.jpg");
+  width: 202px;
+  height: 202px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.telebirrLogo:hover {
+  opacity: 0;
+}
+
+.headerBirr {
+  color: red;
+}
+
+.qr {
+  width: 256px;
+  height: 256px;
+  align-items: center;
+  justify-content: center;
+}
+
+.PaymentOptions{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.PaymentOption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.pmLogo {
+  width: 200px;
+  height: 200px;
+}

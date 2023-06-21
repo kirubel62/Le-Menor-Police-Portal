@@ -1,0 +1,43 @@
+.masterF {
+  position: relative;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: fit-content;
+}
+.main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: lightblue;
+}
+
+.left {
+}
+
+.middle {
+  display: inline;
+  justify-content: center;
+  align-items: center;
+}
+
+.m1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.socialmedialink {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.socialmedialink:hover {
+    opacity: 0.7;
+    transform: rotate(20deg);
+}
+
+.right {
+}

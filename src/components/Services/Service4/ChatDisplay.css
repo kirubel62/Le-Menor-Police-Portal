@@ -1,0 +1,56 @@
+.ChatDis {
+  height: 62vh;
+  width: 100vw;
+  overflow-y: scroll;
+  /* padding: 10px; */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .dis2 {
+  display: flex;
+ flex-direction: row;
+  align-items: center;
+  justify-content: center;
+} */
+
+.chatsviv {
+  /* margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-bottom: 10px;
+  gap: 50px;
+}
+
+.Dnames {
+  display: inline-block;
+  color: #7289da;
+  font-size: 12px;
+  margin-bottom: 5px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #7289da;
+  text-align: center;
+  line-height: 30px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.Dmessage {
+  background-color: #f2f3f5;
+  color: #36393f;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  line-height: 1.4;
+  width: 500px;
+}

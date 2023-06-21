@@ -1,0 +1,42 @@
+.MStotyMaster {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 69vh;
+}
+
+.child {
+  position: relative;
+  background-color: white;
+  width: fit-content;
+  height: 250px;
+  border-radius: 25px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  opacity: 0.8;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.lable {
+  margin: 10px;
+}
+
+.input {
+  margin: 10px;
+}
+
+.btn {
+  margin-top: 25px;
+}
+
+.Progress {
+  margin-top: 25px;
+}

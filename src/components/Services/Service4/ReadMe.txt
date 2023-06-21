@@ -1,0 +1,1 @@
+This is community chat service registery

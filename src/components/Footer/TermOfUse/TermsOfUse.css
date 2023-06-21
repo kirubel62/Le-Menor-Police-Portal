@@ -1,0 +1,45 @@
+.terms-of-use-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #f8f8f8;
+    color: #333;
+    font-family: Arial, sans-serif;
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .subtitle {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  
+  .section-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .section-text {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .bullet-list {
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding-left: 20px;
+  }
+  
+  .bullet-list li {
+    list-style-type: disc;
+  }
+  
+  .section-text:last-child {
+    margin-bottom: 0;
+  }
+  

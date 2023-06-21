@@ -1,0 +1,45 @@
+.BlogMaster {
+  /* background-image: url("./images/bg2.png"); */
+  height: 63hv;
+  background-color: ;
+}
+.Bloggrid-container {
+  /* background-image: url("./images/bg2.png"); */
+  
+  display: grid;
+  column-gap: 50px;
+  row-gap: 50px;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 5%;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-item {
+  background-color: forestgreen;
+  min-height: 200px;
+  min-width: 200px;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  opacity: 50%;
+  display: grid;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.Title {
+  color: yellow;
+}
+
+.grid-item:hover {
+  padding: 2px 16px;
+  background-color: black;
+  transform: scale(1.3, 1.3);
+}
+
+.logo {
+  height: 250px;
+  width: 250px;
+}

@@ -1,0 +1,121 @@
+.bgdiv {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 5px;
+
+  /* position: absolute;
+
+  display: block;
+
+  top: 0;
+
+  left: 0;
+
+  z-index: 0;
+  width: fit-content; */
+}
+.c1 {
+  /* position: relative; */
+  display: flex;
+  /* width: fit-content; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.form-cd {
+  border-radius: 25px;
+  background-color: rgb(111, 189, 246);
+  width: 500px;
+  /* margin: 0px auto; */
+  padding: 5px;
+  /* display: flex;
+  flex-direction: column; */
+  margin-bottom: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+}
+
+.label {
+  float: left;
+}
+
+.input {
+  /* float: right;
+  text-align: left;
+  padding-left: 5px; */
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.pre {
+  text-align: justify;
+}
+
+/* .Map {
+  height: 200px;
+  width: 100%;
+  align-items: center;
+  justify-content: end;
+} */
+
+.camera {
+  display: flex;
+  height: fit-content;
+  margin-top: 50px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Left {
+  display: inline;
+}
+
+.button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #45a049;
+}
+
+.button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
