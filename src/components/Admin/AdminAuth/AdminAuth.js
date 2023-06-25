@@ -29,13 +29,13 @@ const AdminAuth = () => {
         const id = user.uid;
         setAID(id);
         console.log(id);
-        // console.log("auth=",uid);
-        // console.log("auth=", user.id);
-        // if (AID == "Dizm62fRVLSE90Wks3yuM1gEUK33") {
+        console.log("auth=", uid);
+        console.log("auth=", user.id);
+        if (AID == "SsBvNtssLWZUx9oqbtakddnpixl2") {
           navigate("/admin");
-        // } else {
+        } else {
           alert("error");
-        // }
+        }
       })
       .catch((error) => {
         const errorCode = error.code;
